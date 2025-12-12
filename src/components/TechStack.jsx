@@ -1,6 +1,6 @@
 export default function TechStack() {
     return (
-        <section>
+        <section id="tech-stack">
             <div className="mt-8 mb-4">
                 <h2 className="text-xl font-medium tracking-wide uppercase font-mono text-neutral-500 dark:text-neutral-300">Tech Stack</h2>
             </div>

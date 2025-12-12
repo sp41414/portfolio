@@ -5,11 +5,14 @@ import AvailableDot from "./components/AvailableDot"
 import TechStack from "./components/TechStack"
 import { ExternalLink } from "lucide-react"
 import ProjectCards from "./components/ProjectCards"
+import Contact from "./components/Contact"
+import SectionScroller from "./components/SectionScroller"
 
 function App() {
     return (
         <ThemeProvider>
             <div className="flex flex-col min-h-screen bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 transition-colors duration-200">
+                <SectionScroller />
                 <nav className="sticky top-0 z-1 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm border-b border-neutral-200 dark:border-neutral-800">
                     <div className="max-w-5xl mx-auto px-6 py-4 flex justify-end">
                         <ThemeToggle />
@@ -18,7 +21,7 @@ function App() {
 
                 <main className="flex-1 max-w-5xl mx-auto px-6 py-16 sm:py-24">
                     <div className="space-y-8">
-                        <section className="space-y-4">
+                        <section id="intro" className="space-y-4">
                             <h1 className="font-semibold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight">
                                 Hey, I'm <span className="text-yellow-400 underline">[NAME]</span>!
                             </h1>
@@ -35,6 +38,8 @@ function App() {
                         <TechStack />
 
                         <ProjectCards />
+
+                        <Contact />
                     </div>
                 </main>
             </div >
