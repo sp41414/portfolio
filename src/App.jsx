@@ -34,8 +34,7 @@ function App() {
 
                         <section className="flex items-center gap-2.5 text-base sm:text-lg">
                             <AvailableDot available={true} />
-                            <span className="text-neutral-600 dark:text-neutral-400">Available for work, </span>
-                            <a href="" download aria-label="Download Resume" className="px-3 py-0.5 inline-flex items-center font-semibold rounded-lg bg-white text-neutral-800 border border-neutral-300 shadow-sm dark:bg-neutral-800/90 dark:text-white dark:border-neutral-700/80 dark:shadow-xl dark:hover:shadow-black/30 hover:bg-neutral-100 dark:hover:bg-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-600 transition-all duration-300">Download Resume</a>
+                            <span className="text-neutral-600 dark:text-neutral-400">Available for work</span>
                         </section>
 
                         <TechStack />
