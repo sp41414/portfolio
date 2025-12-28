@@ -2,68 +2,636 @@ export default function ProjectCards() {
     return (
         <section className="space-y-4" id="projects">
             <div>
-                <h2 className="text-xl font-medium tracking-wide uppercase font-mono text-neutral-500 dark:text-neutral-300">Personal Projects</h2>
+                <h2 className="text-xl font-medium tracking-wide uppercase font-mono text-neutral-500 dark:text-neutral-300">
+                    Personal Projects
+                </h2>
                 <p className="text-neutral-600 dark:text-neutral-400 max-w-lg mt-3 mb-6">
-                    These are only my most recent and best projects, my other projects can be found <a className="text-blue-500 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400" href="https://sp41414.github.io/TOP-projects/">here</a> from my time taking
-                    <a href="https://www.theodinproject.com/dashboard" className="text-blue-500 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400"> The Odin Project</a> curriculum
+                    These are only my most recent and best projects, my other
+                    projects can be found{" "}
+                    <a
+                        className="text-blue-500 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400"
+                        href="https://sp41414.github.io/TOP-projects/"
+                    >
+                        here
+                    </a>{" "}
+                    from my time taking
+                    <a
+                        href="https://www.theodinproject.com/dashboard"
+                        className="text-blue-500 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400"
+                    >
+                        {" "}
+                        The Odin Project
+                    </a>{" "}
+                    curriculum
                 </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3">
+                {/* Social Media Project */}
+                <div className="group relative rounded-lg border-2 border-neutral-200 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-200 dark:border-neutral-800 p-4 hover:shadow-lg shadow-neutral-300 dark:shadow-neutral-800">
+                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center gap-2">
+                        <a
+                            href="https://github.com/sp41414/instigator"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                role="img"
+                                className="shrink-0 size-5 fill-black hover:fill-neutral-700 dark:fill-white dark:hover:fill-neutral-300 transition-all duration-200"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>GitHub</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                        <a
+                            href="https://instigator.pages.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-external-link-icon lucide-external-link size-5 stroke-black dark:stroke-white shrink-0 hover:stroke-neutral-700 hover:dark:stroke-neutral-300 transition-all duration-200"
+                            >
+                                <path d="M15 3h6v6" />
+                                <path d="M10 14 21 3" />
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <h3 className="text-lg font-semibold mb-2">Instigator</h3>
+
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                        A twitter-like social media microblogging app made with
+                        a REST API. It includes authorization, following/social
+                        functionality, profile customization, content management
+                        with posts and comments and file uploading, and user
+                        settings.
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-3">
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 16 16"
+                                className="shrink-0 size-3.5"
+                            >
+                                <path
+                                    fill="#58C4DC"
+                                    d="M8.028 6.496c-.846 0-1.532.667-1.532 1.49s.686 1.49 1.532 1.49 1.533-.667 1.533-1.49-.687-1.49-1.533-1.49"
+                                ></path>
+                                <path
+                                    fill="#58C4DC"
+                                    d="M15.999 8c0-1.17-1.114-2.196-2.888-2.871q.036-.23.06-.45C13.346 2.996 12.93 1.783 12 1.26c-1.042-.584-2.512-.16-4 .997-1.488-1.156-2.959-1.58-4-.996-.93.523-1.347 1.736-1.172 3.417q.023.222.06.452a8 8 0 0 0-.432.174C.872 5.996 0 6.954 0 8c0 1.17 1.114 2.196 2.888 2.871a8 8 0 0 0-.06.45c-.175 1.681.241 2.895 1.172 3.417.32.177.683.267 1.05.262.882 0 1.911-.451 2.95-1.259C9.036 14.55 10.066 15 10.95 15c.367.005.73-.085 1.05-.262.93-.522 1.347-1.735 1.172-3.417a9 9 0 0 0-.06-.45C14.886 10.197 16 9.17 16 8m-5.057-6.26c.236-.005.47.05.677.161.646.363.937 1.348.795 2.701q-.014.138-.034.28a14 14 0 0 0-2.258-.461c-.463-.6-.979-1.16-1.54-1.673.882-.663 1.71-1.008 2.36-1.008m-.304 7.741q-.428.724-.931 1.4a17 17 0 0 1-3.418 0q-.502-.676-.928-1.4-.429-.72-.777-1.482.348-.761.777-1.482.426-.72.926-1.396a17 17 0 0 1 3.42-.002A16.3 16.3 0 0 1 11.414 8a16 16 0 0 1-.777 1.482m1.165-.549q.27.713.44 1.455-.742.225-1.51.354.292-.427.565-.889.269-.456.508-.918m-4.877 2.74a18 18 0 0 0 2.147 0q-.5.583-1.075 1.097-.574-.514-1.072-1.098m-1.66-.934a12 12 0 0 1-1.512-.353q.17-.74.439-1.453.235.461.508.918.275.46.564.89m-1.072-3.68a11 11 0 0 1-.438-1.446q.742-.225 1.507-.356a17 17 0 0 0-1.072 1.803m4.88-2.74a18 18 0 0 0-2.148 0q.499-.583 1.073-1.097.574.515 1.075 1.098m2.224 1.822a16 16 0 0 0-.568-.889q.77.129 1.515.355-.17.74-.439 1.452a15 15 0 0 0-.508-.918m-7.71-1.542c-.143-1.353.149-2.338.794-2.701.208-.111.441-.167.678-.161.65 0 1.477.344 2.36 1.008a13.3 13.3 0 0 0-1.542 1.674q-1.15.136-2.258.459a7 7 0 0 1-.034-.28M2.768 5.98l.266-.11q.268 1.096.72 2.13-.454 1.038-.72 2.135C1.596 9.561.762 8.766.762 8c0-.726.734-1.462 2.006-2.02m1.612 8.118c-.645-.363-.937-1.348-.794-2.701q.013-.138.034-.28c.737.217 1.493.37 2.257.461q.698.902 1.541 1.674c-1.23.924-2.354 1.229-3.036.846m8.033-2.701c.14 1.353-.15 2.338-.795 2.7-.682.385-1.807.08-3.036-.845a13.3 13.3 0 0 0 1.54-1.674q1.15-.135 2.258-.46.02.141.034.279m.553-1.263A13 13 0 0 0 12.248 8c.301-.69.542-1.405.72-2.135 1.435.574 2.271 1.369 2.271 2.135s-.834 1.56-2.272 2.134"
+                                ></path>
+                            </svg>
+                            React
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                role="img"
+                                className="size-3.5 shrink-0 fill-[#5FA04E]"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Node.js</title>
+                                <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" />
+                            </svg>
+                            Node
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                role="img"
+                                className="shrink-0 size-3.5 fill-black dark:fill-white"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Express</title>
+                                <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
+                            </svg>
+                            Express
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                className="size-3.5 shrink-0"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 128 128"
+                            >
+                                <path
+                                    fill="#99425B"
+                                    d="M124.129 63.02c0-7.692-5.828-14.165-13.652-16.012L128 .113H41.16l17.563 47.043c-7.578 1.996-13.164 8.356-13.164 15.903 0 5.546 3.058 10.464 7.703 13.496-1.832 2.367-3.953 4.55-6.356 6.62-4.523 3.848-9.539 6.805-14.957 8.766-4.89-2.996-7.008-8.285-5.094-13.02 7.457-2.07 12.88-8.394 12.88-15.827 0-9.133-8.192-16.532-18.22-16.532-10.066 0-18.253 7.434-18.253 16.57 0 4.513 2.035 8.653 5.297 11.61-.286.52-.57 1.035-.856 1.59C4.973 81.438 1.875 87.207.691 93.68c-2.363 12.941 1.508 23.336 10.84 29.215 5.258 3.293 11.047 4.957 17.282 4.957 10.714 0 21.597-4.883 32.109-9.618 7.5-3.363 15.242-6.879 22.863-8.578 2.813-.629 5.746-1 8.844-1.406 6.273-.813 12.754-1.664 18.582-4.734 6.805-3.586 11.45-9.579 12.797-16.457 1.015-5.29 0-10.614-2.61-15.274a15.35 15.35 0 002.73-8.765zm-7.945 0c0 5.14-4.606 9.32-10.27 9.32s-10.27-4.18-10.27-9.32c0-1.665.489-3.254 1.344-4.622.325-.52.735-1.035 1.14-1.48a8.517 8.517 0 011.427-1.219l.043-.039c.324-.222.691-.445 1.058-.664 0 0 .04 0 .04-.039.163-.074.327-.184.492-.258.039 0 .078-.039.12-.039.165-.07.368-.144.57-.219a8.78 8.78 0 00.571-.222c.04 0 .082-.04.121-.04.164-.034.328-.109.489-.144.043 0 .125-.039.164-.039.203-.035.367-.074.57-.11h.043l.61-.113c.042 0 .12 0 .163-.035.164 0 .325-.039.489-.039h.203c.203 0 .41-.035.652-.035h.531c.16 0 .286 0 .446.035h.082c.328.04.652.074.98.149 4.645.886 8.192 4.66 8.192 9.172zM52.527 7.508h64.102l-14.711 39.387c-.61.113-1.223.296-1.832.48l-15.484-28.66L69.074 47.19c-.613-.183-1.265-.296-1.914-.406zM81.664 59.8c-.773-3.477-2.73-6.582-5.5-8.875l8.438-15.457 8.515 15.789c-2.527 2.293-4.36 5.215-5.094 8.543zM61.25 53.96c.203-.04.367-.074.57-.113h.121c.164-.035.329-.035.489-.075h.164c.164 0 .285-.035.449-.035h1.59c.16 0 .285.035.406.035.082 0 .121 0 .203.04.164.035.285.035.45.074.038 0 .081 0 .163.035.204.039.407.074.57.113h.04c.164.035.328.07.488.145.043 0 .082.039.164.039.121.035.285.074.406.148.043 0 .082.035.125.035.16.075.325.114.489.188h.039c.203.07.367.144.531.258h.04c.163.074.327.183.491.257.04 0 .04.04.078.04.164.07.286.183.45.257l.043.035c.488.333.937.704 1.382 1.075l.043.035c.407.406.813.851 1.141 1.332 1.059 1.48 1.672 3.219 1.672 5.105 0 5.141-4.606 9.317-10.27 9.317s-10.27-4.176-10.27-9.317c-.042-4.328 3.259-7.988 7.743-9.023zm-40.102-.262c5.665 0 10.27 4.18 10.27 9.32 0 5.141-4.605 9.32-10.27 9.32-5.664 0-10.27-4.179-10.27-9.32 0-5.14 4.606-9.32 10.27-9.32zm94.79 32.067c-.895 4.73-4.118 8.875-8.844 11.351-4.442 2.332-9.903 3.07-15.649 3.809-3.136.406-6.437.851-9.617 1.554-8.476 1.887-16.625 5.586-24.531 9.133-10.106 4.551-19.645 8.84-28.484 8.84-4.606 0-8.723-1.183-12.633-3.66-8.965-5.621-8.52-16.16-7.457-21.93.976-5.402 3.707-10.468 6.316-15.312.16-.297.285-.555.445-.852.899.297 1.836.52 2.813.668-1.547 7.84 2.851 15.938 11.41 19.934l1.55.738 1.669-.555c7.133-2.293 13.734-6.027 19.562-11.02 3.301-2.812 6.114-5.843 8.477-9.136.937.149 1.875.188 2.812.188 8.477 0 15.606-5.29 17.645-12.391h6.844c2.039 7.137 9.171 12.39 17.648 12.39 3.383 0 6.52-.85 9.207-2.292 1.063 2.773 1.387 5.656.817 8.543zm0 0"
+                                />
+                            </svg>
+                            Jest/Supertest
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-label="TypeScript"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                fill="#000000"
+                                className="shrink-0 size-3.5 fill-black dark:fill-white"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <rect
+                                        width="512"
+                                        height="512"
+                                        rx="15%"
+                                        fill="#3178c6"
+                                    ></rect>
+                                    <path
+                                        fill="#ffffff"
+                                        d="m233 284h64v-41H118v41h64v183h51zm84 173c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4c11-2.3 20-6.1 28-11c8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9c-5.2-2.6-9.7-5.2-13-7.8c-3.7-2.7-6.5-5.5-8.5-8.4c-2-3-3-6.3-3-10c0-3.4.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6c4.7-1.1 9.9-1.6 16-1.6c4.2 0 8.6.31 13 .94c4.6.63 9.3 1.6 14 2.9c4.7 1.3 9.3 2.9 14 4.9c4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21c-4.7 8.4-7 18-7 30c0 15 4.3 28 13 38c8.6 11 22 19 39 27c6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5c2.5 3.4 3.8 7.4 3.8 12c0 3.2-.78 6.2-2.3 9s-3.9 5.2-7.1 7.2s-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7c-11 0-22-1.9-32-5.7c-11-3.8-21-9.5-28.1-15.44z"
+                                    ></path>
+                                </g>
+                            </svg>
+                            Typescript
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                className="size-3.5 fill-black dark:fill-white shrink-0"
+                                viewBox="-27 0 310 310"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                                fill="currentColor"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    {" "}
+                                    <g>
+                                        {" "}
+                                        <path
+                                            d="M254.312882,235.518775 L148.000961,9.74987264 C145.309805,4.08935083 139.731924,0.359884549 133.472618,0.0359753113 C127.198908,-0.384374336 121.212054,2.71925839 117.939655,8.08838662 L2.63252565,194.847143 C-0.947129465,200.604248 -0.871814894,207.912774 2.8257217,213.594888 L59.2003287,300.896318 C63.5805009,307.626626 71.8662281,310.673635 79.5631922,308.384597 L243.161606,259.992851 C248.145475,258.535702 252.252801,254.989363 254.421072,250.271225 C256.559881,245.57581 256.523135,240.176915 254.32061,235.511047 L254.312882,235.518775 Z M230.511129,245.201761 L91.6881763,286.252058 C87.4533189,287.511696 83.388474,283.840971 84.269448,279.567474 L133.866738,42.0831633 C134.794079,37.6396542 140.929985,36.9364206 142.869673,41.0476325 L234.684164,236.021085 C235.505704,237.779423 235.515611,239.809427 234.711272,241.575701 C233.906934,243.341974 232.369115,244.667163 230.503401,245.201761 L230.511129,245.201761 Z"
+                                            fill="currentColor"
+                                            fillRule="nonzero"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                    </g>{" "}
+                                </g>
+                            </svg>
+                            Prisma
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                className="size-3.5 shrink-0 fill-black dark:fill-white"
+                                viewBox="0 0 256 320"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                            >
+                                <g>
+                                    <path
+                                        d="M128,0 C57.28,0 0,57.28 0,128 L64,128 C64,92.672 92.672,64 128,64 L128,0 L128,0 Z"
+                                        fill="#D6FF00"
+                                    ></path>
+                                    <path
+                                        d="M256,128 C256,57.28 198.72,0 128,0 L128,64 C163.328,64 192,92.672 192,128 L256,128 L256,128 Z"
+                                        fill="#34E27A"
+                                    ></path>
+                                    <path
+                                        d="M128,256 C198.72,256 256,198.72 256,128 L192,128 C192,163.328 163.328,192 128,192 L128,256 L128,256 Z"
+                                        fill="#00B9F1"
+                                    ></path>
+                                    <path
+                                        d="M64,256 L64,128 L0,128 L0,320 L128,320 L128,256 L64,256 L64,256 Z"
+                                        fill="currentColor"
+                                    ></path>
+                                </g>
+                            </svg>
+                            Passport (JWT + Google OAuth)
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                role="img"
+                                className="size-3.5 shrink-0 fill-[#06B6D4]"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Tailwind CSS</title>
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                            </svg>
+                            Tailwindcss
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                className="size-3.5 shrink-0"
+                                viewBox="-0.5 0 257 257"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                                fill="#000000"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    {" "}
+                                    <defs>
+                                        {" "}
+                                        <linearGradient
+                                            x1="-0.828097821%"
+                                            y1="7.6518539%"
+                                            x2="57.6359644%"
+                                            y2="78.4107719%"
+                                            id="linearGradient-1"
+                                        >
+                                            {" "}
+                                            <stop
+                                                stopColor="#41D1FF"
+                                                offset="0%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#BD34FE"
+                                                offset="100%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                        </linearGradient>{" "}
+                                        <linearGradient
+                                            x1="43.3760053%"
+                                            y1="2.24179788%"
+                                            x2="50.3158848%"
+                                            y2="89.0299051%"
+                                            id="linearGradient-2"
+                                        >
+                                            {" "}
+                                            <stop
+                                                stopColor="#FFEA83"
+                                                offset="0%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#FFDD35"
+                                                offset="8.33333%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#FFA800"
+                                                offset="100%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                        </linearGradient>{" "}
+                                    </defs>{" "}
+                                    <g>
+                                        {" "}
+                                        <path
+                                            d="M255.152904,37.937763 L134.896865,252.97646 C132.413943,257.416178 126.035075,257.442321 123.5149,253.02417 L0.87443175,37.9584812 C-1.87111536,33.1438084 2.24595371,27.3119153 7.70191187,28.2871109 L128.086639,49.8052023 C128.854587,49.9424525 129.640835,49.9411454 130.408783,49.8012155 L248.276014,28.3179595 C253.713738,27.3268821 257.850198,33.1136134 255.152904,37.937763 Z"
+                                            fill="url(#linearGradient-1)"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                        <path
+                                            d="M185.432401,0.0631038902 L96.4393502,17.500942 C94.9766549,17.7875335 93.8936852,19.0270992 93.8054529,20.5146956 L88.3311293,112.971419 C88.2023755,115.149123 90.2023075,116.839261 92.3277254,116.349082 L117.10466,110.630976 C119.422882,110.096354 121.517582,112.138114 121.041128,114.469407 L113.67994,150.515893 C113.184532,152.941955 115.462232,155.016394 117.831433,154.29681 L133.134834,149.647295 C135.507302,148.927059 137.786963,151.00738 137.285019,153.435402 L125.586724,210.056351 C124.854723,213.598061 129.565674,215.529368 131.530313,212.49287 L132.842687,210.464834 L205.359174,65.745575 C206.573511,63.3224548 204.479465,60.5594769 201.818118,61.0730542 L176.31441,65.9952397 C173.91776,66.4573155 171.878614,64.2253653 172.555061,61.8805431 L189.2009,4.17570253 C189.878001,1.82692623 187.831665,-0.406957894 185.432401,0.0631038902 Z"
+                                            fill="url(#linearGradient-2)"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                    </g>{" "}
+                                </g>
+                            </svg>
+                            Vite
+                        </span>
+                    </div>
+                </div>
+
                 {/* Messaging App Project */}
                 <div className="group relative rounded-lg border-2 border-neutral-200 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-200 dark:border-neutral-800 p-4 hover:shadow-lg shadow-neutral-300 dark:shadow-neutral-800">
                     {/* links */}
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center gap-2">
-                        <a href="https://github.com/sp41414/messaging-app" target="_blank" rel="noopener noreferrer">
-                            <svg role="img" className="shrink-0 size-5 fill-black hover:fill-neutral-700 dark:fill-white dark:hover:fill-neutral-300 transition-all duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>
+                        <a
+                            href="https://github.com/sp41414/messaging-app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                role="img"
+                                className="shrink-0 size-5 fill-black hover:fill-neutral-700 dark:fill-white dark:hover:fill-neutral-300 transition-all duration-200"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>GitHub</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
                         </a>
-                        <a href="https://messaging-v.pages.dev/" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link-icon lucide-external-link size-5 stroke-black dark:stroke-white shrink-0 hover:stroke-neutral-700 hover:dark:stroke-neutral-300 transition-all duration-200"><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></svg>
+                        <a
+                            href="https://messaging-v.pages.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-external-link-icon lucide-external-link size-5 stroke-black dark:stroke-white shrink-0 hover:stroke-neutral-700 hover:dark:stroke-neutral-300 transition-all duration-200"
+                            >
+                                <path d="M15 3h6v6" />
+                                <path d="M10 14 21 3" />
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            </svg>
                         </a>
                     </div>
                     {/* title */}
-                    <h3 className="text-lg font-semibold mb-2">Messaging App</h3>
+                    <h3 className="text-lg font-semibold mb-2">
+                        Messaging App
+                    </h3>
 
                     {/* description */}
-                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">A discord-like Messaging App with a REST API, it includes authorization, sending messages to another user, customizing a user profile, and a friends system for sending a friend request, accepting, refusing and blocking another user.</p>
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                        A discord-like Messaging App with a REST API, it
+                        includes authorization, sending messages to another
+                        user, customizing a user profile, and a friends system
+                        for sending a friend request, accepting, refusing and
+                        blocking another user.
+                    </p>
 
                     {/* tech stack */}
                     <div className="flex flex-wrap gap-2 mb-3">
-                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="shrink-0 size-3.5"><path fill="#58C4DC" d="M8.028 6.496c-.846 0-1.532.667-1.532 1.49s.686 1.49 1.532 1.49 1.533-.667 1.533-1.49-.687-1.49-1.533-1.49"></path><path fill="#58C4DC" d="M15.999 8c0-1.17-1.114-2.196-2.888-2.871q.036-.23.06-.45C13.346 2.996 12.93 1.783 12 1.26c-1.042-.584-2.512-.16-4 .997-1.488-1.156-2.959-1.58-4-.996-.93.523-1.347 1.736-1.172 3.417q.023.222.06.452a8 8 0 0 0-.432.174C.872 5.996 0 6.954 0 8c0 1.17 1.114 2.196 2.888 2.871a8 8 0 0 0-.06.45c-.175 1.681.241 2.895 1.172 3.417.32.177.683.267 1.05.262.882 0 1.911-.451 2.95-1.259C9.036 14.55 10.066 15 10.95 15c.367.005.73-.085 1.05-.262.93-.522 1.347-1.735 1.172-3.417a9 9 0 0 0-.06-.45C14.886 10.197 16 9.17 16 8m-5.057-6.26c.236-.005.47.05.677.161.646.363.937 1.348.795 2.701q-.014.138-.034.28a14 14 0 0 0-2.258-.461c-.463-.6-.979-1.16-1.54-1.673.882-.663 1.71-1.008 2.36-1.008m-.304 7.741q-.428.724-.931 1.4a17 17 0 0 1-3.418 0q-.502-.676-.928-1.4-.429-.72-.777-1.482.348-.761.777-1.482.426-.72.926-1.396a17 17 0 0 1 3.42-.002A16.3 16.3 0 0 1 11.414 8a16 16 0 0 1-.777 1.482m1.165-.549q.27.713.44 1.455-.742.225-1.51.354.292-.427.565-.889.269-.456.508-.918m-4.877 2.74a18 18 0 0 0 2.147 0q-.5.583-1.075 1.097-.574-.514-1.072-1.098m-1.66-.934a12 12 0 0 1-1.512-.353q.17-.74.439-1.453.235.461.508.918.275.46.564.89m-1.072-3.68a11 11 0 0 1-.438-1.446q.742-.225 1.507-.356a17 17 0 0 0-1.072 1.803m4.88-2.74a18 18 0 0 0-2.148 0q.499-.583 1.073-1.097.574.515 1.075 1.098m2.224 1.822a16 16 0 0 0-.568-.889q.77.129 1.515.355-.17.74-.439 1.452a15 15 0 0 0-.508-.918m-7.71-1.542c-.143-1.353.149-2.338.794-2.701.208-.111.441-.167.678-.161.65 0 1.477.344 2.36 1.008a13.3 13.3 0 0 0-1.542 1.674q-1.15.136-2.258.459a7 7 0 0 1-.034-.28M2.768 5.98l.266-.11q.268 1.096.72 2.13-.454 1.038-.72 2.135C1.596 9.561.762 8.766.762 8c0-.726.734-1.462 2.006-2.02m1.612 8.118c-.645-.363-.937-1.348-.794-2.701q.013-.138.034-.28c.737.217 1.493.37 2.257.461q.698.902 1.541 1.674c-1.23.924-2.354 1.229-3.036.846m8.033-2.701c.14 1.353-.15 2.338-.795 2.7-.682.385-1.807.08-3.036-.845a13.3 13.3 0 0 0 1.54-1.674q1.15-.135 2.258-.46.02.141.034.279m.553-1.263A13 13 0 0 0 12.248 8c.301-.69.542-1.405.72-2.135 1.435.574 2.271 1.369 2.271 2.135s-.834 1.56-2.272 2.134"></path></svg>React</span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg role="img" className="size-3.5 shrink-0 fill-[#5FA04E]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Node.js</title><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" /></svg>
-                            Node</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 16 16"
+                                className="shrink-0 size-3.5"
+                            >
+                                <path
+                                    fill="#58C4DC"
+                                    d="M8.028 6.496c-.846 0-1.532.667-1.532 1.49s.686 1.49 1.532 1.49 1.533-.667 1.533-1.49-.687-1.49-1.533-1.49"
+                                ></path>
+                                <path
+                                    fill="#58C4DC"
+                                    d="M15.999 8c0-1.17-1.114-2.196-2.888-2.871q.036-.23.06-.45C13.346 2.996 12.93 1.783 12 1.26c-1.042-.584-2.512-.16-4 .997-1.488-1.156-2.959-1.58-4-.996-.93.523-1.347 1.736-1.172 3.417q.023.222.06.452a8 8 0 0 0-.432.174C.872 5.996 0 6.954 0 8c0 1.17 1.114 2.196 2.888 2.871a8 8 0 0 0-.06.45c-.175 1.681.241 2.895 1.172 3.417.32.177.683.267 1.05.262.882 0 1.911-.451 2.95-1.259C9.036 14.55 10.066 15 10.95 15c.367.005.73-.085 1.05-.262.93-.522 1.347-1.735 1.172-3.417a9 9 0 0 0-.06-.45C14.886 10.197 16 9.17 16 8m-5.057-6.26c.236-.005.47.05.677.161.646.363.937 1.348.795 2.701q-.014.138-.034.28a14 14 0 0 0-2.258-.461c-.463-.6-.979-1.16-1.54-1.673.882-.663 1.71-1.008 2.36-1.008m-.304 7.741q-.428.724-.931 1.4a17 17 0 0 1-3.418 0q-.502-.676-.928-1.4-.429-.72-.777-1.482.348-.761.777-1.482.426-.72.926-1.396a17 17 0 0 1 3.42-.002A16.3 16.3 0 0 1 11.414 8a16 16 0 0 1-.777 1.482m1.165-.549q.27.713.44 1.455-.742.225-1.51.354.292-.427.565-.889.269-.456.508-.918m-4.877 2.74a18 18 0 0 0 2.147 0q-.5.583-1.075 1.097-.574-.514-1.072-1.098m-1.66-.934a12 12 0 0 1-1.512-.353q.17-.74.439-1.453.235.461.508.918.275.46.564.89m-1.072-3.68a11 11 0 0 1-.438-1.446q.742-.225 1.507-.356a17 17 0 0 0-1.072 1.803m4.88-2.74a18 18 0 0 0-2.148 0q.499-.583 1.073-1.097.574.515 1.075 1.098m2.224 1.822a16 16 0 0 0-.568-.889q.77.129 1.515.355-.17.74-.439 1.452a15 15 0 0 0-.508-.918m-7.71-1.542c-.143-1.353.149-2.338.794-2.701.208-.111.441-.167.678-.161.65 0 1.477.344 2.36 1.008a13.3 13.3 0 0 0-1.542 1.674q-1.15.136-2.258.459a7 7 0 0 1-.034-.28M2.768 5.98l.266-.11q.268 1.096.72 2.13-.454 1.038-.72 2.135C1.596 9.561.762 8.766.762 8c0-.726.734-1.462 2.006-2.02m1.612 8.118c-.645-.363-.937-1.348-.794-2.701q.013-.138.034-.28c.737.217 1.493.37 2.257.461q.698.902 1.541 1.674c-1.23.924-2.354 1.229-3.036.846m8.033-2.701c.14 1.353-.15 2.338-.795 2.7-.682.385-1.807.08-3.036-.845a13.3 13.3 0 0 0 1.54-1.674q1.15-.135 2.258-.46.02.141.034.279m.553-1.263A13 13 0 0 0 12.248 8c.301-.69.542-1.405.72-2.135 1.435.574 2.271 1.369 2.271 2.135s-.834 1.56-2.272 2.134"
+                                ></path>
+                            </svg>
+                            React
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg role="img" className="shrink-0 size-3.5 fill-black dark:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Express</title><path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" /></svg>
-                            Express</span>
+                            <svg
+                                role="img"
+                                className="size-3.5 shrink-0 fill-[#5FA04E]"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Node.js</title>
+                                <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" />
+                            </svg>
+                            Node
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg className="size-3.5 fill-black dark:fill-white shrink-0" viewBox="-27 0 310 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M254.312882,235.518775 L148.000961,9.74987264 C145.309805,4.08935083 139.731924,0.359884549 133.472618,0.0359753113 C127.198908,-0.384374336 121.212054,2.71925839 117.939655,8.08838662 L2.63252565,194.847143 C-0.947129465,200.604248 -0.871814894,207.912774 2.8257217,213.594888 L59.2003287,300.896318 C63.5805009,307.626626 71.8662281,310.673635 79.5631922,308.384597 L243.161606,259.992851 C248.145475,258.535702 252.252801,254.989363 254.421072,250.271225 C256.559881,245.57581 256.523135,240.176915 254.32061,235.511047 L254.312882,235.518775 Z M230.511129,245.201761 L91.6881763,286.252058 C87.4533189,287.511696 83.388474,283.840971 84.269448,279.567474 L133.866738,42.0831633 C134.794079,37.6396542 140.929985,36.9364206 142.869673,41.0476325 L234.684164,236.021085 C235.505704,237.779423 235.515611,239.809427 234.711272,241.575701 C233.906934,243.341974 232.369115,244.667163 230.503401,245.201761 L230.511129,245.201761 Z" fill="currentColor" fillRule="nonzero"> </path> </g> </g></svg>
-                            Prisma</span>
+                            <svg
+                                role="img"
+                                className="shrink-0 size-3.5 fill-black dark:fill-white"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Express</title>
+                                <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
+                            </svg>
+                            Express
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg className="size-3.5 shrink-0 fill-black dark:fill-white" viewBox="0 0 256 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                                <g>
-                                    <path d="M128,0 C57.28,0 0,57.28 0,128 L64,128 C64,92.672 92.672,64 128,64 L128,0 L128,0 Z" fill="#D6FF00"></path>
-                                    <path d="M256,128 C256,57.28 198.72,0 128,0 L128,64 C163.328,64 192,92.672 192,128 L256,128 L256,128 Z" fill="#34E27A"></path>
-                                    <path d="M128,256 C198.72,256 256,198.72 256,128 L192,128 C192,163.328 163.328,192 128,192 L128,256 L128,256 Z" fill="#00B9F1"></path>
-                                    <path d="M64,256 L64,128 L0,128 L0,320 L128,320 L128,256 L64,256 L64,256 Z" fill="currentColor"></path>
+                            <svg
+                                className="size-3.5 fill-black dark:fill-white shrink-0"
+                                viewBox="-27 0 310 310"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                                fill="currentColor"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    {" "}
+                                    <g>
+                                        {" "}
+                                        <path
+                                            d="M254.312882,235.518775 L148.000961,9.74987264 C145.309805,4.08935083 139.731924,0.359884549 133.472618,0.0359753113 C127.198908,-0.384374336 121.212054,2.71925839 117.939655,8.08838662 L2.63252565,194.847143 C-0.947129465,200.604248 -0.871814894,207.912774 2.8257217,213.594888 L59.2003287,300.896318 C63.5805009,307.626626 71.8662281,310.673635 79.5631922,308.384597 L243.161606,259.992851 C248.145475,258.535702 252.252801,254.989363 254.421072,250.271225 C256.559881,245.57581 256.523135,240.176915 254.32061,235.511047 L254.312882,235.518775 Z M230.511129,245.201761 L91.6881763,286.252058 C87.4533189,287.511696 83.388474,283.840971 84.269448,279.567474 L133.866738,42.0831633 C134.794079,37.6396542 140.929985,36.9364206 142.869673,41.0476325 L234.684164,236.021085 C235.505704,237.779423 235.515611,239.809427 234.711272,241.575701 C233.906934,243.341974 232.369115,244.667163 230.503401,245.201761 L230.511129,245.201761 Z"
+                                            fill="currentColor"
+                                            fillRule="nonzero"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                    </g>{" "}
                                 </g>
                             </svg>
-                            Passport (JWT)</span>
+                            Prisma
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg role="img" className="size-3.5 shrink-0 fill-[#06B6D4]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tailwind CSS</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" /></svg>
-                            Tailwindcss</span>
+                            <svg
+                                className="size-3.5 shrink-0 fill-black dark:fill-white"
+                                viewBox="0 0 256 320"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                            >
+                                <g>
+                                    <path
+                                        d="M128,0 C57.28,0 0,57.28 0,128 L64,128 C64,92.672 92.672,64 128,64 L128,0 L128,0 Z"
+                                        fill="#D6FF00"
+                                    ></path>
+                                    <path
+                                        d="M256,128 C256,57.28 198.72,0 128,0 L128,64 C163.328,64 192,92.672 192,128 L256,128 L256,128 Z"
+                                        fill="#34E27A"
+                                    ></path>
+                                    <path
+                                        d="M128,256 C198.72,256 256,198.72 256,128 L192,128 C192,163.328 163.328,192 128,192 L128,256 L128,256 Z"
+                                        fill="#00B9F1"
+                                    ></path>
+                                    <path
+                                        d="M64,256 L64,128 L0,128 L0,320 L128,320 L128,256 L64,256 L64,256 Z"
+                                        fill="currentColor"
+                                    ></path>
+                                </g>
+                            </svg>
+                            Passport (JWT)
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg className="size-3.5 shrink-0" viewBox="-0.5 0 257 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <linearGradient x1="-0.828097821%" y1="7.6518539%" x2="57.6359644%" y2="78.4107719%" id="linearGradient-1"> <stop stopColor="#41D1FF" offset="0%"> </stop> <stop stopColor="#BD34FE" offset="100%"> </stop> </linearGradient> <linearGradient x1="43.3760053%" y1="2.24179788%" x2="50.3158848%" y2="89.0299051%" id="linearGradient-2"> <stop stopColor="#FFEA83" offset="0%"> </stop> <stop stopColor="#FFDD35" offset="8.33333%"> </stop> <stop stopColor="#FFA800" offset="100%"> </stop> </linearGradient> </defs> <g> <path d="M255.152904,37.937763 L134.896865,252.97646 C132.413943,257.416178 126.035075,257.442321 123.5149,253.02417 L0.87443175,37.9584812 C-1.87111536,33.1438084 2.24595371,27.3119153 7.70191187,28.2871109 L128.086639,49.8052023 C128.854587,49.9424525 129.640835,49.9411454 130.408783,49.8012155 L248.276014,28.3179595 C253.713738,27.3268821 257.850198,33.1136134 255.152904,37.937763 Z" fill="url(#linearGradient-1)"> </path> <path d="M185.432401,0.0631038902 L96.4393502,17.500942 C94.9766549,17.7875335 93.8936852,19.0270992 93.8054529,20.5146956 L88.3311293,112.971419 C88.2023755,115.149123 90.2023075,116.839261 92.3277254,116.349082 L117.10466,110.630976 C119.422882,110.096354 121.517582,112.138114 121.041128,114.469407 L113.67994,150.515893 C113.184532,152.941955 115.462232,155.016394 117.831433,154.29681 L133.134834,149.647295 C135.507302,148.927059 137.786963,151.00738 137.285019,153.435402 L125.586724,210.056351 C124.854723,213.598061 129.565674,215.529368 131.530313,212.49287 L132.842687,210.464834 L205.359174,65.745575 C206.573511,63.3224548 204.479465,60.5594769 201.818118,61.0730542 L176.31441,65.9952397 C173.91776,66.4573155 171.878614,64.2253653 172.555061,61.8805431 L189.2009,4.17570253 C189.878001,1.82692623 187.831665,-0.406957894 185.432401,0.0631038902 Z" fill="url(#linearGradient-2)"> </path> </g> </g></svg>
-                            Vite</span>
+                            <svg
+                                role="img"
+                                className="size-3.5 shrink-0 fill-[#06B6D4]"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Tailwind CSS</title>
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                            </svg>
+                            Tailwindcss
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                className="size-3.5 shrink-0"
+                                viewBox="-0.5 0 257 257"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                                fill="#000000"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    {" "}
+                                    <defs>
+                                        {" "}
+                                        <linearGradient
+                                            x1="-0.828097821%"
+                                            y1="7.6518539%"
+                                            x2="57.6359644%"
+                                            y2="78.4107719%"
+                                            id="linearGradient-1"
+                                        >
+                                            {" "}
+                                            <stop
+                                                stopColor="#41D1FF"
+                                                offset="0%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#BD34FE"
+                                                offset="100%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                        </linearGradient>{" "}
+                                        <linearGradient
+                                            x1="43.3760053%"
+                                            y1="2.24179788%"
+                                            x2="50.3158848%"
+                                            y2="89.0299051%"
+                                            id="linearGradient-2"
+                                        >
+                                            {" "}
+                                            <stop
+                                                stopColor="#FFEA83"
+                                                offset="0%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#FFDD35"
+                                                offset="8.33333%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#FFA800"
+                                                offset="100%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                        </linearGradient>{" "}
+                                    </defs>{" "}
+                                    <g>
+                                        {" "}
+                                        <path
+                                            d="M255.152904,37.937763 L134.896865,252.97646 C132.413943,257.416178 126.035075,257.442321 123.5149,253.02417 L0.87443175,37.9584812 C-1.87111536,33.1438084 2.24595371,27.3119153 7.70191187,28.2871109 L128.086639,49.8052023 C128.854587,49.9424525 129.640835,49.9411454 130.408783,49.8012155 L248.276014,28.3179595 C253.713738,27.3268821 257.850198,33.1136134 255.152904,37.937763 Z"
+                                            fill="url(#linearGradient-1)"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                        <path
+                                            d="M185.432401,0.0631038902 L96.4393502,17.500942 C94.9766549,17.7875335 93.8936852,19.0270992 93.8054529,20.5146956 L88.3311293,112.971419 C88.2023755,115.149123 90.2023075,116.839261 92.3277254,116.349082 L117.10466,110.630976 C119.422882,110.096354 121.517582,112.138114 121.041128,114.469407 L113.67994,150.515893 C113.184532,152.941955 115.462232,155.016394 117.831433,154.29681 L133.134834,149.647295 C135.507302,148.927059 137.786963,151.00738 137.285019,153.435402 L125.586724,210.056351 C124.854723,213.598061 129.565674,215.529368 131.530313,212.49287 L132.842687,210.464834 L205.359174,65.745575 C206.573511,63.3224548 204.479465,60.5594769 201.818118,61.0730542 L176.31441,65.9952397 C173.91776,66.4573155 171.878614,64.2253653 172.555061,61.8805431 L189.2009,4.17570253 C189.878001,1.82692623 187.831665,-0.406957894 185.432401,0.0631038902 Z"
+                                            fill="url(#linearGradient-2)"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                    </g>{" "}
+                                </g>
+                            </svg>
+                            Vite
+                        </span>
                     </div>
                 </div>
                 <div className="group relative rounded-lg border-2 border-neutral-200 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-200 dark:border-neutral-800 p-4 hover:shadow-lg shadow-neutral-300 dark:shadow-neutral-800">
                     {/* links */}
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center gap-2">
-                        <a href="https://github.com/sp41414/blog-api" target="_blank" rel="noopener noreferrer">
-                            <svg role="img" className="shrink-0 size-5 fill-black hover:fill-neutral-700 dark:fill-white dark:hover:fill-neutral-300 transition-all duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>
+                        <a
+                            href="https://github.com/sp41414/blog-api"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                role="img"
+                                className="shrink-0 size-5 fill-black hover:fill-neutral-700 dark:fill-white dark:hover:fill-neutral-300 transition-all duration-200"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>GitHub</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
                         </a>
-                        <a href="https://blog-api-5dx.pages.dev/" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link-icon lucide-external-link size-5 stroke-black dark:stroke-white shrink-0 hover:stroke-neutral-700 hover:dark:stroke-neutral-300 transition-all duration-200"><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></svg>
+                        <a
+                            href="https://blog-api-5dx.pages.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="lucide lucide-external-link-icon lucide-external-link size-5 stroke-black dark:stroke-white shrink-0 hover:stroke-neutral-700 hover:dark:stroke-neutral-300 transition-all duration-200"
+                            >
+                                <path d="M15 3h6v6" />
+                                <path d="M10 14 21 3" />
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            </svg>
                         </a>
                     </div>
 
@@ -71,43 +639,241 @@ export default function ProjectCards() {
                     <h3 className="text-lg font-semibold mb-2">Blog</h3>
 
                     {/* description */}
-                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">My First ever REST API fullstack project. It includes authorization with an admin dashboard, the ability to comment on posts, and a full text editor powered by TinyMCE. You can create, edit, delete and draft posts</p>
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
+                        My First ever REST API fullstack project. It includes
+                        authorization with an admin dashboard, the ability to
+                        comment on posts, and a full text editor powered by
+                        TinyMCE. You can create, edit, delete and draft posts
+                    </p>
 
                     {/* tech stack */}
                     <div className="flex flex-wrap gap-2 mb-3">
-                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="shrink-0 size-3.5"><path fill="#58C4DC" d="M8.028 6.496c-.846 0-1.532.667-1.532 1.49s.686 1.49 1.532 1.49 1.533-.667 1.533-1.49-.687-1.49-1.533-1.49"></path><path fill="#58C4DC" d="M15.999 8c0-1.17-1.114-2.196-2.888-2.871q.036-.23.06-.45C13.346 2.996 12.93 1.783 12 1.26c-1.042-.584-2.512-.16-4 .997-1.488-1.156-2.959-1.58-4-.996-.93.523-1.347 1.736-1.172 3.417q.023.222.06.452a8 8 0 0 0-.432.174C.872 5.996 0 6.954 0 8c0 1.17 1.114 2.196 2.888 2.871a8 8 0 0 0-.06.45c-.175 1.681.241 2.895 1.172 3.417.32.177.683.267 1.05.262.882 0 1.911-.451 2.95-1.259C9.036 14.55 10.066 15 10.95 15c.367.005.73-.085 1.05-.262.93-.522 1.347-1.735 1.172-3.417a9 9 0 0 0-.06-.45C14.886 10.197 16 9.17 16 8m-5.057-6.26c.236-.005.47.05.677.161.646.363.937 1.348.795 2.701q-.014.138-.034.28a14 14 0 0 0-2.258-.461c-.463-.6-.979-1.16-1.54-1.673.882-.663 1.71-1.008 2.36-1.008m-.304 7.741q-.428.724-.931 1.4a17 17 0 0 1-3.418 0q-.502-.676-.928-1.4-.429-.72-.777-1.482.348-.761.777-1.482.426-.72.926-1.396a17 17 0 0 1 3.42-.002A16.3 16.3 0 0 1 11.414 8a16 16 0 0 1-.777 1.482m1.165-.549q.27.713.44 1.455-.742.225-1.51.354.292-.427.565-.889.269-.456.508-.918m-4.877 2.74a18 18 0 0 0 2.147 0q-.5.583-1.075 1.097-.574-.514-1.072-1.098m-1.66-.934a12 12 0 0 1-1.512-.353q.17-.74.439-1.453.235.461.508.918.275.46.564.89m-1.072-3.68a11 11 0 0 1-.438-1.446q.742-.225 1.507-.356a17 17 0 0 0-1.072 1.803m4.88-2.74a18 18 0 0 0-2.148 0q.499-.583 1.073-1.097.574.515 1.075 1.098m2.224 1.822a16 16 0 0 0-.568-.889q.77.129 1.515.355-.17.74-.439 1.452a15 15 0 0 0-.508-.918m-7.71-1.542c-.143-1.353.149-2.338.794-2.701.208-.111.441-.167.678-.161.65 0 1.477.344 2.36 1.008a13.3 13.3 0 0 0-1.542 1.674q-1.15.136-2.258.459a7 7 0 0 1-.034-.28M2.768 5.98l.266-.11q.268 1.096.72 2.13-.454 1.038-.72 2.135C1.596 9.561.762 8.766.762 8c0-.726.734-1.462 2.006-2.02m1.612 8.118c-.645-.363-.937-1.348-.794-2.701q.013-.138.034-.28c.737.217 1.493.37 2.257.461q.698.902 1.541 1.674c-1.23.924-2.354 1.229-3.036.846m8.033-2.701c.14 1.353-.15 2.338-.795 2.7-.682.385-1.807.08-3.036-.845a13.3 13.3 0 0 0 1.54-1.674q1.15-.135 2.258-.46.02.141.034.279m.553-1.263A13 13 0 0 0 12.248 8c.301-.69.542-1.405.72-2.135 1.435.574 2.271 1.369 2.271 2.135s-.834 1.56-2.272 2.134"></path></svg>React</span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg role="img" className="size-3.5 shrink-0 fill-[#5FA04E]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Node.js</title><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" /></svg>
-                            Node</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 16 16"
+                                className="shrink-0 size-3.5"
+                            >
+                                <path
+                                    fill="#58C4DC"
+                                    d="M8.028 6.496c-.846 0-1.532.667-1.532 1.49s.686 1.49 1.532 1.49 1.533-.667 1.533-1.49-.687-1.49-1.533-1.49"
+                                ></path>
+                                <path
+                                    fill="#58C4DC"
+                                    d="M15.999 8c0-1.17-1.114-2.196-2.888-2.871q.036-.23.06-.45C13.346 2.996 12.93 1.783 12 1.26c-1.042-.584-2.512-.16-4 .997-1.488-1.156-2.959-1.58-4-.996-.93.523-1.347 1.736-1.172 3.417q.023.222.06.452a8 8 0 0 0-.432.174C.872 5.996 0 6.954 0 8c0 1.17 1.114 2.196 2.888 2.871a8 8 0 0 0-.06.45c-.175 1.681.241 2.895 1.172 3.417.32.177.683.267 1.05.262.882 0 1.911-.451 2.95-1.259C9.036 14.55 10.066 15 10.95 15c.367.005.73-.085 1.05-.262.93-.522 1.347-1.735 1.172-3.417a9 9 0 0 0-.06-.45C14.886 10.197 16 9.17 16 8m-5.057-6.26c.236-.005.47.05.677.161.646.363.937 1.348.795 2.701q-.014.138-.034.28a14 14 0 0 0-2.258-.461c-.463-.6-.979-1.16-1.54-1.673.882-.663 1.71-1.008 2.36-1.008m-.304 7.741q-.428.724-.931 1.4a17 17 0 0 1-3.418 0q-.502-.676-.928-1.4-.429-.72-.777-1.482.348-.761.777-1.482.426-.72.926-1.396a17 17 0 0 1 3.42-.002A16.3 16.3 0 0 1 11.414 8a16 16 0 0 1-.777 1.482m1.165-.549q.27.713.44 1.455-.742.225-1.51.354.292-.427.565-.889.269-.456.508-.918m-4.877 2.74a18 18 0 0 0 2.147 0q-.5.583-1.075 1.097-.574-.514-1.072-1.098m-1.66-.934a12 12 0 0 1-1.512-.353q.17-.74.439-1.453.235.461.508.918.275.46.564.89m-1.072-3.68a11 11 0 0 1-.438-1.446q.742-.225 1.507-.356a17 17 0 0 0-1.072 1.803m4.88-2.74a18 18 0 0 0-2.148 0q.499-.583 1.073-1.097.574.515 1.075 1.098m2.224 1.822a16 16 0 0 0-.568-.889q.77.129 1.515.355-.17.74-.439 1.452a15 15 0 0 0-.508-.918m-7.71-1.542c-.143-1.353.149-2.338.794-2.701.208-.111.441-.167.678-.161.65 0 1.477.344 2.36 1.008a13.3 13.3 0 0 0-1.542 1.674q-1.15.136-2.258.459a7 7 0 0 1-.034-.28M2.768 5.98l.266-.11q.268 1.096.72 2.13-.454 1.038-.72 2.135C1.596 9.561.762 8.766.762 8c0-.726.734-1.462 2.006-2.02m1.612 8.118c-.645-.363-.937-1.348-.794-2.701q.013-.138.034-.28c.737.217 1.493.37 2.257.461q.698.902 1.541 1.674c-1.23.924-2.354 1.229-3.036.846m8.033-2.701c.14 1.353-.15 2.338-.795 2.7-.682.385-1.807.08-3.036-.845a13.3 13.3 0 0 0 1.54-1.674q1.15-.135 2.258-.46.02.141.034.279m.553-1.263A13 13 0 0 0 12.248 8c.301-.69.542-1.405.72-2.135 1.435.574 2.271 1.369 2.271 2.135s-.834 1.56-2.272 2.134"
+                                ></path>
+                            </svg>
+                            React
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg role="img" className="shrink-0 size-3.5 fill-black dark:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Express</title><path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" /></svg>
-                            Express</span>
+                            <svg
+                                role="img"
+                                className="size-3.5 shrink-0 fill-[#5FA04E]"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Node.js</title>
+                                <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" />
+                            </svg>
+                            Node
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg className="size-3.5 fill-black dark:fill-white shrink-0" viewBox="-27 0 310 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="currentColor"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M254.312882,235.518775 L148.000961,9.74987264 C145.309805,4.08935083 139.731924,0.359884549 133.472618,0.0359753113 C127.198908,-0.384374336 121.212054,2.71925839 117.939655,8.08838662 L2.63252565,194.847143 C-0.947129465,200.604248 -0.871814894,207.912774 2.8257217,213.594888 L59.2003287,300.896318 C63.5805009,307.626626 71.8662281,310.673635 79.5631922,308.384597 L243.161606,259.992851 C248.145475,258.535702 252.252801,254.989363 254.421072,250.271225 C256.559881,245.57581 256.523135,240.176915 254.32061,235.511047 L254.312882,235.518775 Z M230.511129,245.201761 L91.6881763,286.252058 C87.4533189,287.511696 83.388474,283.840971 84.269448,279.567474 L133.866738,42.0831633 C134.794079,37.6396542 140.929985,36.9364206 142.869673,41.0476325 L234.684164,236.021085 C235.505704,237.779423 235.515611,239.809427 234.711272,241.575701 C233.906934,243.341974 232.369115,244.667163 230.503401,245.201761 L230.511129,245.201761 Z" fill="currentColor" fillRule="nonzero"> </path> </g> </g></svg>
-                            Prisma</span>
+                            <svg
+                                role="img"
+                                className="shrink-0 size-3.5 fill-black dark:fill-white"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Express</title>
+                                <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
+                            </svg>
+                            Express
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg className="size-3.5 shrink-0 fill-black dark:fill-white" viewBox="0 0 256 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                                <g>
-                                    <path d="M128,0 C57.28,0 0,57.28 0,128 L64,128 C64,92.672 92.672,64 128,64 L128,0 L128,0 Z" fill="#D6FF00"></path>
-                                    <path d="M256,128 C256,57.28 198.72,0 128,0 L128,64 C163.328,64 192,92.672 192,128 L256,128 L256,128 Z" fill="#34E27A"></path>
-                                    <path d="M128,256 C198.72,256 256,198.72 256,128 L192,128 C192,163.328 163.328,192 128,192 L128,256 L128,256 Z" fill="#00B9F1"></path>
-                                    <path d="M64,256 L64,128 L0,128 L0,320 L128,320 L128,256 L64,256 L64,256 Z" fill="currentColor"></path>
+                            <svg
+                                className="size-3.5 fill-black dark:fill-white shrink-0"
+                                viewBox="-27 0 310 310"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                                fill="currentColor"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    {" "}
+                                    <g>
+                                        {" "}
+                                        <path
+                                            d="M254.312882,235.518775 L148.000961,9.74987264 C145.309805,4.08935083 139.731924,0.359884549 133.472618,0.0359753113 C127.198908,-0.384374336 121.212054,2.71925839 117.939655,8.08838662 L2.63252565,194.847143 C-0.947129465,200.604248 -0.871814894,207.912774 2.8257217,213.594888 L59.2003287,300.896318 C63.5805009,307.626626 71.8662281,310.673635 79.5631922,308.384597 L243.161606,259.992851 C248.145475,258.535702 252.252801,254.989363 254.421072,250.271225 C256.559881,245.57581 256.523135,240.176915 254.32061,235.511047 L254.312882,235.518775 Z M230.511129,245.201761 L91.6881763,286.252058 C87.4533189,287.511696 83.388474,283.840971 84.269448,279.567474 L133.866738,42.0831633 C134.794079,37.6396542 140.929985,36.9364206 142.869673,41.0476325 L234.684164,236.021085 C235.505704,237.779423 235.515611,239.809427 234.711272,241.575701 C233.906934,243.341974 232.369115,244.667163 230.503401,245.201761 L230.511129,245.201761 Z"
+                                            fill="currentColor"
+                                            fillRule="nonzero"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                    </g>{" "}
                                 </g>
                             </svg>
-                            Passport (JWT)</span>
+                            Prisma
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg role="img" className="size-3.5 shrink-0 fill-[#06B6D4]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tailwind CSS</title><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" /></svg>
-                            Tailwindcss</span>
+                            <svg
+                                className="size-3.5 shrink-0 fill-black dark:fill-white"
+                                viewBox="0 0 256 320"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                            >
+                                <g>
+                                    <path
+                                        d="M128,0 C57.28,0 0,57.28 0,128 L64,128 C64,92.672 92.672,64 128,64 L128,0 L128,0 Z"
+                                        fill="#D6FF00"
+                                    ></path>
+                                    <path
+                                        d="M256,128 C256,57.28 198.72,0 128,0 L128,64 C163.328,64 192,92.672 192,128 L256,128 L256,128 Z"
+                                        fill="#34E27A"
+                                    ></path>
+                                    <path
+                                        d="M128,256 C198.72,256 256,198.72 256,128 L192,128 C192,163.328 163.328,192 128,192 L128,256 L128,256 Z"
+                                        fill="#00B9F1"
+                                    ></path>
+                                    <path
+                                        d="M64,256 L64,128 L0,128 L0,320 L128,320 L128,256 L64,256 L64,256 Z"
+                                        fill="currentColor"
+                                    ></path>
+                                </g>
+                            </svg>
+                            Passport (JWT)
+                        </span>
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg className="size-3.5 shrink-0" viewBox="-0.5 0 257 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <linearGradient x1="-0.828097821%" y1="7.6518539%" x2="57.6359644%" y2="78.4107719%" id="linearGradient-1"> <stop stopColor="#41D1FF" offset="0%"> </stop> <stop stopColor="#BD34FE" offset="100%"> </stop> </linearGradient> <linearGradient x1="43.3760053%" y1="2.24179788%" x2="50.3158848%" y2="89.0299051%" id="linearGradient-2"> <stop stopColor="#FFEA83" offset="0%"> </stop> <stop stopColor="#FFDD35" offset="8.33333%"> </stop> <stop stopColor="#FFA800" offset="100%"> </stop> </linearGradient> </defs> <g> <path d="M255.152904,37.937763 L134.896865,252.97646 C132.413943,257.416178 126.035075,257.442321 123.5149,253.02417 L0.87443175,37.9584812 C-1.87111536,33.1438084 2.24595371,27.3119153 7.70191187,28.2871109 L128.086639,49.8052023 C128.854587,49.9424525 129.640835,49.9411454 130.408783,49.8012155 L248.276014,28.3179595 C253.713738,27.3268821 257.850198,33.1136134 255.152904,37.937763 Z" fill="url(#linearGradient-1)"> </path> <path d="M185.432401,0.0631038902 L96.4393502,17.500942 C94.9766549,17.7875335 93.8936852,19.0270992 93.8054529,20.5146956 L88.3311293,112.971419 C88.2023755,115.149123 90.2023075,116.839261 92.3277254,116.349082 L117.10466,110.630976 C119.422882,110.096354 121.517582,112.138114 121.041128,114.469407 L113.67994,150.515893 C113.184532,152.941955 115.462232,155.016394 117.831433,154.29681 L133.134834,149.647295 C135.507302,148.927059 137.786963,151.00738 137.285019,153.435402 L125.586724,210.056351 C124.854723,213.598061 129.565674,215.529368 131.530313,212.49287 L132.842687,210.464834 L205.359174,65.745575 C206.573511,63.3224548 204.479465,60.5594769 201.818118,61.0730542 L176.31441,65.9952397 C173.91776,66.4573155 171.878614,64.2253653 172.555061,61.8805431 L189.2009,4.17570253 C189.878001,1.82692623 187.831665,-0.406957894 185.432401,0.0631038902 Z" fill="url(#linearGradient-2)"> </path> </g> </g></svg>
-                            Vite</span>
+                            <svg
+                                role="img"
+                                className="size-3.5 shrink-0 fill-[#06B6D4]"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Tailwind CSS</title>
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                            </svg>
+                            Tailwindcss
+                        </span>
+                        <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                            <svg
+                                className="size-3.5 shrink-0"
+                                viewBox="-0.5 0 257 257"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                preserveAspectRatio="xMidYMid"
+                                fill="#000000"
+                            >
+                                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    {" "}
+                                    <defs>
+                                        {" "}
+                                        <linearGradient
+                                            x1="-0.828097821%"
+                                            y1="7.6518539%"
+                                            x2="57.6359644%"
+                                            y2="78.4107719%"
+                                            id="linearGradient-1"
+                                        >
+                                            {" "}
+                                            <stop
+                                                stopColor="#41D1FF"
+                                                offset="0%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#BD34FE"
+                                                offset="100%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                        </linearGradient>{" "}
+                                        <linearGradient
+                                            x1="43.3760053%"
+                                            y1="2.24179788%"
+                                            x2="50.3158848%"
+                                            y2="89.0299051%"
+                                            id="linearGradient-2"
+                                        >
+                                            {" "}
+                                            <stop
+                                                stopColor="#FFEA83"
+                                                offset="0%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#FFDD35"
+                                                offset="8.33333%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                            <stop
+                                                stopColor="#FFA800"
+                                                offset="100%"
+                                            >
+                                                {" "}
+                                            </stop>{" "}
+                                        </linearGradient>{" "}
+                                    </defs>{" "}
+                                    <g>
+                                        {" "}
+                                        <path
+                                            d="M255.152904,37.937763 L134.896865,252.97646 C132.413943,257.416178 126.035075,257.442321 123.5149,253.02417 L0.87443175,37.9584812 C-1.87111536,33.1438084 2.24595371,27.3119153 7.70191187,28.2871109 L128.086639,49.8052023 C128.854587,49.9424525 129.640835,49.9411454 130.408783,49.8012155 L248.276014,28.3179595 C253.713738,27.3268821 257.850198,33.1136134 255.152904,37.937763 Z"
+                                            fill="url(#linearGradient-1)"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                        <path
+                                            d="M185.432401,0.0631038902 L96.4393502,17.500942 C94.9766549,17.7875335 93.8936852,19.0270992 93.8054529,20.5146956 L88.3311293,112.971419 C88.2023755,115.149123 90.2023075,116.839261 92.3277254,116.349082 L117.10466,110.630976 C119.422882,110.096354 121.517582,112.138114 121.041128,114.469407 L113.67994,150.515893 C113.184532,152.941955 115.462232,155.016394 117.831433,154.29681 L133.134834,149.647295 C135.507302,148.927059 137.786963,151.00738 137.285019,153.435402 L125.586724,210.056351 C124.854723,213.598061 129.565674,215.529368 131.530313,212.49287 L132.842687,210.464834 L205.359174,65.745575 C206.573511,63.3224548 204.479465,60.5594769 201.818118,61.0730542 L176.31441,65.9952397 C173.91776,66.4573155 171.878614,64.2253653 172.555061,61.8805431 L189.2009,4.17570253 C189.878001,1.82692623 187.831665,-0.406957894 185.432401,0.0631038902 Z"
+                                            fill="url(#linearGradient-2)"
+                                        >
+                                            {" "}
+                                        </path>{" "}
+                                    </g>{" "}
+                                </g>
+                            </svg>
+                            Vite
+                        </span>
 
                         <span className="inline-flex transition-all duration-200 items-center gap-1.5 px-2.5 py-0.5 h-6 bg-neutral-100 hover:bg-neutral-200 rounded-full text-xs font-medium dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                            <svg className="size-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940.6 959.5"><path d="M621.6 0c159.9.9 317.9 133.8 317.9 327.5 0 0 1 49.2 1.1 108.8v24.9c0 11.2-.1 22.5-.2 33.8l-.2 16.9c-.7 47.6-2.4 91.9-5.8 114.9-22.2 148-132.7 250.2-285 276.2-137.3 26.8-218.7 42.3-245 47.5-11.3 2.4-61.1 9-82.7 9C154.3 959.5 2.4 834.1 0 632v-33.3l.1-5.7v-12.4c0-21.8.1-48.5.2-76l.1-16.5c.2-52.5.7-104.9 1.5-129C7.6 211.6 109.6 92.4 303.8 54.2L551.1 6.1C573.7 1.9 598.6 0 621.6 0z" fill="#0c132c" /><path d="M733.5 538.7l-150.4 29.2v147l-376.2 73V421.2l150.4-29.1v219.6l225.8-43.8V348.3l-225.8 43.8V245l376.2-73z" fill="#fff" fillRule="evenodd" /></svg>
-                            TinyMCE</span>
+                            <svg
+                                className="size-3.5 shrink-0"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 940.6 959.5"
+                            >
+                                <path
+                                    d="M621.6 0c159.9.9 317.9 133.8 317.9 327.5 0 0 1 49.2 1.1 108.8v24.9c0 11.2-.1 22.5-.2 33.8l-.2 16.9c-.7 47.6-2.4 91.9-5.8 114.9-22.2 148-132.7 250.2-285 276.2-137.3 26.8-218.7 42.3-245 47.5-11.3 2.4-61.1 9-82.7 9C154.3 959.5 2.4 834.1 0 632v-33.3l.1-5.7v-12.4c0-21.8.1-48.5.2-76l.1-16.5c.2-52.5.7-104.9 1.5-129C7.6 211.6 109.6 92.4 303.8 54.2L551.1 6.1C573.7 1.9 598.6 0 621.6 0z"
+                                    fill="#0c132c"
+                                />
+                                <path
+                                    d="M733.5 538.7l-150.4 29.2v147l-376.2 73V421.2l150.4-29.1v219.6l225.8-43.8V348.3l-225.8 43.8V245l376.2-73z"
+                                    fill="#fff"
+                                    fillRule="evenodd"
+                                />
+                            </svg>
+                            TinyMCE
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
