@@ -11,7 +11,10 @@ function App() {
     return (
         <ThemeProvider>
             <div className="flex flex-col min-h-screen bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 transition-colors duration-200">
-                <SectionScroller />
+                {/*
+                    add back when the portfolio is a little bit... bigger..
+                    <SectionScroller />
+                */}
                 <nav className="sticky top-0 z-10 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm border-b border-neutral-200 dark:border-neutral-800">
                     <div className="max-w-5xl mx-auto px-6 py-4 flex justify-end">
                         <ThemeToggle />
