@@ -269,7 +269,7 @@ export default function ProjectCards() {
                 <div className="group relative rounded-lg border-2 border-neutral-200 hover:border-neutral-300 dark:hover:border-neutral-700 transition-all duration-200 dark:border-neutral-800 p-4 hover:shadow-lg shadow-neutral-300 dark:shadow-neutral-800">
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center gap-2">
                         <a
-                            href="https://github.com/sp41414/instigator"
+                            href="https://github.com/sp41414/goHttp"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
