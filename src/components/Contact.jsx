@@ -20,7 +20,7 @@ export default function Contact() {
                 <Mail className="size-4 shrink-0" />
             </a>
             <a
-                href="https://discord.gg/jy8mwFFM"
+                href="https://discord.com/users/707847174419120189"
                 className="inline-flex items-center gap-2 text-neutral-900 dark:text-white border border-neutral-200 dark:border-neutral-800 px-4 py-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors ml-2"
                 aria-label="Link to my discord user/DMS"
             >
